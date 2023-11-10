@@ -14,7 +14,7 @@ https://dear-honeycrisp-70a.notion.site/3rd-Project-Idea-a7e7a2c5dace482689c2be4
 
 ## 요구사항 명세서
 
-https://shy-scribe-79f.notion.site/02d2867d3f5742a8939220afd152552a?pvs=4
+https://shy-scribe-79f.notion.site/02d2867d3f5742a8939220afd152552a?pvs=4   
 
 ## 기술 선정
 
