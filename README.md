@@ -4,17 +4,17 @@
 
 ### 팀원
 
-| Position |  Nmae  |
-| :------: | :----: |
-| FrontEnd | 김정윤 |
-| BackEnd  | 구지웅 |
-| BackEnd  | 이상원 |
-| BackEnd  | 이진우 |
-| BackEnd  | 최창효 |
+| Position          |  Nmae  |
+| :---------------- | :----: |
+| FrontEnd, BackEnd | 김정윤 |
+| BackEnd           | 구지웅 |
+| BackEnd, Infra    | 이상원 |
+| BackEnd           | 이진우 |
+| BackEnd           | 최창효 |
 
 ## 프로젝트 개요
 
-## 사용 기술
+### 사용 기술
 
 ![tech map](/images/techmap.png)
 
@@ -44,7 +44,7 @@
 |          | Kuberbetes       |
 |          | Kafka            |
 
-## 프로젝트 아키텍처
+### 프로젝트 아키텍처
 
 ![architecture](/images/architecture.png)
 
@@ -53,7 +53,7 @@
 - 무중단 배포 스크립트 작성으로 서버 다운타임을 없애 지속적인 서비스 제공 가능
 - Kubernetes Job을 사용해 안정적인 스케줄링
 
-## 프로젝트 설명
+### 프로젝트 설명
 
 ![main](/images/main.png)
 
@@ -63,7 +63,31 @@ Blooming Blooms는 시장성 있는 화훼 산업을 타깃으로 화훼 쇼핑�
 
 일반 사용자들을 위한 쇼핑몰뿐만 아니라 꽃 가게 사장님들을 위한 가게 관리 및 관리자 기능들도 존재한다.
 
-## 프로젝트 Repository
+### ⚙️ 프로젝트 주요기능 소개
+
+- Chat GPT를 이용한 편지 메세지 추천
+  - 상품에 대표꽃의 꽃말과 어떤 사람에게 보낼지 선택하면 편지 내용 생성
+- Chat GPT를 이용한 상품 검색
+  - "친구 생일에 선물하기 좋은 50000원 이하 꽃다발 추천해줘"로 검색하면 서비스 내에 50000원 이하의 "친구" 태그를 가지고 있는 꽃다발 상품이 검색됨
+- 사용자는 상품을 픽업, 배송, 정기 구독 가능
+- 상품 판매 상태가 일시 품절인 경우 재입고 알림을 신청해 상품 재입고 시 SSE와 SMS 알림 수신 가능
+- 셀러는 셀러 페이지에서 가게 정보, 상품을 관리 가능
+- 시스템 관리자는 관리자 페이지에서 서비스에 입점되어 있는 가게 관리, 일반회원, 셀러 관리 가능
+
+### 🛠️ 서비스에 적용된 기술
+
+- Spring Cloud 기반의 MSA 아키텍처
+- SAGA Coreography 패턴을 이용한 분산 트랜잭션 처리
+  - 1:1 kafka pub/sub 방식으로 결과적 데이터 정합성을 보장
+- msa 아키텍처에서 효율적인 알림 전달을 위해 aws의 sns, sqs, lambda를 사용해 알림을 처리
+  - 부득이한 상황에 의해 sse와 문자 알림이 전송된 후 데이터베이스 저장에 실패하게 되어 큐에서 데이터를 다시 폴링 하는 경우 sse와 문자 알림의 중복 전송을 방지하기 위해 AOP를 사용해 방지
+- MongoDB를 사용한 상품 데이터 관리
+  - 비정형 데이터 구조를 가진 셀러가 등록하는 상품은 최대 7의 태그와 22개의 꽃 종류에서 원하는 꽃을 골라 상품을 구성
+  - schemaless 한 mongodb 의 특징으로 일반 상품과 카테고리와 태그가 없는 구독 상품을 동일한 collection에서 관리
+- 확장성을 고려한 CQRS 패턴 설계
+  - CQRS의 효율적인 Scale Out을 위해 DynamoDB 사용
+
+### 프로젝트 Repository
 
 | Service              | Url                                                 |
 | :------------------- | :-------------------------------------------------- |
@@ -86,11 +110,11 @@ Blooming Blooms는 시장성 있는 화훼 산업을 타깃으로 화훼 쇼핑�
 | FrontEnd             | https://github.com/lotteon2/BB-FRONTEND             |
 | Infra                | https://github.com/lotteon2/BB-INFRA-CONTROL        |
 
-## ERD
+### ERD
 
 ![erd](/images/erd.png)
 
-## 프로젝트 문서
+### 프로젝트 문서
 
 - [기능 명세서](https://shy-scribe-79f.notion.site/0acd63e526144ac3aeac0bea0413704a?pvs=4)
 - [요구사항 명세서](https://shy-scribe-79f.notion.site/02d2867d3f5742a8939220afd152552a?pvs=4)
