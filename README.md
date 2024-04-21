@@ -89,26 +89,26 @@ Blooming Blooms는 시장성 있는 화훼 산업을 타깃으로 화훼 쇼핑�
 
 ### 프로젝트 Repository
 
-| Service              | Url                                                 |
-| :------------------- | :-------------------------------------------------- |
-| Api Gateway          | https://github.com/lotteon2/BB-APIGATEWAY-SERVICE   |
-| Discovery Service    | https://github.com/lotteon2/BB-DISCOVERY-SERVICE    |
-| Config Service       | https://github.com/lotteon2/BB-CONFIG-SERVICE       |
-| Auth Service         | https://github.com/lotteon2/BB-AUTH-SERVICE         |
-| Delivery Service     | https://github.com/lotteon2/BB-DELIVERY-SERVICE     |
-| Giftcard Service     | https://github.com/lotteon2/BB-GIFTCARD-SERVICE     |
-| Notification Service | https://github.com/lotteon2/BB-NOTIFICATION-SERVICE |
-| Order Service        | https://github.com/lotteon2/BB-ORDER-SERVICE        |
-| Order Query Service  | https://github.com/lotteon2/BB-ORDER-QUERY-SERVICE  |
-| Payment Service      | https://github.com/lotteon2/BB-PAYMENT-SERVICE      |
-| Product Service      | https://github.com/lotteon2/BB-PRODUCT-SERVICE      |
-| Store Service        | https://github.com/lotteon2/BB-STORE-SERVICE        |
-| Wishlist Service     | https://github.com/lotteon2/BB-WISHLIST-SERVICE     |
-| Subscription Batch   | https://github.com/lotteon2/BB-SUBSCRIPTION-BATCH   |
-| User Service         | https://github.com/lotteon2/BB-USER-SERVICE         |
-| Maven Repository     | https://github.com/lotteon2/BB-COMMON-REPOSITORY    |
-| FrontEnd             | https://github.com/lotteon2/BB-FRONTEND             |
-| Infra                | https://github.com/lotteon2/BB-INFRA-CONTROL        |
+| Service              | Url                                                 | In charge of Project |
+| :------------------- | :-------------------------------------------------- | :------------------: |
+| Api Gateway          | https://github.com/lotteon2/BB-APIGATEWAY-SERVICE   |                      |
+| Discovery Service    | https://github.com/lotteon2/BB-DISCOVERY-SERVICE    |                      |
+| Config Service       | https://github.com/lotteon2/BB-CONFIG-SERVICE       |                      |
+| Auth Service         | https://github.com/lotteon2/BB-AUTH-SERVICE         |                      |
+| Delivery Service     | https://github.com/lotteon2/BB-DELIVERY-SERVICE     |                      |
+| Giftcard Service     | https://github.com/lotteon2/BB-GIFTCARD-SERVICE     |                      |
+| Notification Service | https://github.com/lotteon2/BB-NOTIFICATION-SERVICE |          ✅          |
+| Order Service        | https://github.com/lotteon2/BB-ORDER-SERVICE        |                      |
+| Order Query Service  | https://github.com/lotteon2/BB-ORDER-QUERY-SERVICE  |                      |
+| Payment Service      | https://github.com/lotteon2/BB-PAYMENT-SERVICE      |                      |
+| Product Service      | https://github.com/lotteon2/BB-PRODUCT-SERVICE      |          ✅          |
+| Store Service        | https://github.com/lotteon2/BB-STORE-SERVICE        |                      |
+| Wishlist Service     | https://github.com/lotteon2/BB-WISHLIST-SERVICE     |                      |
+| Subscription Batch   | https://github.com/lotteon2/BB-SUBSCRIPTION-BATCH   |                      |
+| User Service         | https://github.com/lotteon2/BB-USER-SERVICE         |                      |
+| Maven Repository     | https://github.com/lotteon2/BB-COMMON-REPOSITORY    |          ✅          |
+| FrontEnd             | https://github.com/lotteon2/BB-FRONTEND             |                      |
+| Infra                | https://github.com/lotteon2/BB-INFRA-CONTROL        |          ✅          |
 
 ### ERD
 
