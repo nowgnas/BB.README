@@ -16,45 +16,6 @@
 
 ## 프로젝트 개요
 
-### 사용 기술
-
-![tech map](/images/techmap.png)
-
-| Position | Stack            |
-| :------: | :--------------- |
-| FrontEnd | React            |
-|          | Typescript       |
-|          | Tailwind         |
-|          | Recoil           |
-|          | React Query      |
-|          | Styled Component |
-| BackEnd  | Spring Boot      |
-|          | Spring Cloud     |
-|          | Spring Batch     |
-| Database | Mysql            |
-|          | MongoDB          |
-|          | DynamoDB         |
-|          | Redis            |
-|  Infra   | EKS              |
-|          | SQS              |
-|          | SNS              |
-|          | Event Bridge     |
-|          | Cloud Front      |
-|          | S3               |
-|          | Route53          |
-|          | Terraform        |
-|          | Kuberbetes       |
-|          | Kafka            |
-
-### 프로젝트 아키텍처
-
-![architecture](/images/architecture.png)
-
-- EKS 환경에서 MSA 아키텍처 운영
-- Cloud Front를 이용해 캐시 히트율 90% 달성
-- 무중단 배포 스크립트 작성으로 서버 다운타임을 없애 지속적인 서비스 제공 가능
-- Kubernetes Job을 사용해 안정적인 스케줄링
-
 ### 프로젝트 설명
 
 ![main](/images/main.png)
@@ -123,10 +84,9 @@ Blooming Blooms는 시장성 있는 화훼 산업을 타깃으로 화훼 쇼핑�
 
 #### Retrospect
 
-**KEEP (지속할 것)**
-
-- **Jira를 이용한 업무 관리**
-  - Jira 티켓으로 팀의 업무 진행 상황을 파악하고 주어진 기간 내에 해야할 업무량을 파악할 수 있는 점
+- **KEEP (지속할 것)**
+  - **Jira를 이용한 업무 관리**
+    - Jira 티켓으로 팀의 업무 진행 상황을 파악하고 주어진 기간 내에 해야할 업무량을 파악할 수 있는 점
 - **팀원들과 매주 금요일 기술 공유**
   - 금요일 오전 스크럼을 마친 후 한 주 동안 해결했던 이슈나 새로 도입한 기술을 공유하는 시간을 가지며 개선점에 대해서도 얘기할 수 있었던 점
 - **PROBLEM (문제가 된 것)**
@@ -136,6 +96,45 @@ Blooming Blooms는 시장성 있는 화훼 산업을 타깃으로 화훼 쇼핑�
   - **기획 단계에서 세부적인 정책을 고민할 것**
   - **CQRS 개념을 가지고 설계할 것**
     - 조회와 데이터 조작 테이블을 분리하여 데이터베이스 부하 분산
+
+### 사용 기술
+
+![tech map](/images/techmap.png)
+
+| Position | Stack            |
+| :------: | :--------------- |
+| FrontEnd | React            |
+|          | Typescript       |
+|          | Tailwind         |
+|          | Recoil           |
+|          | React Query      |
+|          | Styled Component |
+| BackEnd  | Spring Boot      |
+|          | Spring Cloud     |
+|          | Spring Batch     |
+| Database | Mysql            |
+|          | MongoDB          |
+|          | DynamoDB         |
+|          | Redis            |
+|  Infra   | EKS              |
+|          | SQS              |
+|          | SNS              |
+|          | Event Bridge     |
+|          | Cloud Front      |
+|          | S3               |
+|          | Route53          |
+|          | Terraform        |
+|          | Kuberbetes       |
+|          | Kafka            |
+
+### 프로젝트 아키텍처
+
+![architecture](/images/architecture.png)
+
+- EKS 환경에서 MSA 아키텍처 운영
+- Cloud Front를 이용해 캐시 히트율 90% 달성
+- 무중단 배포 스크립트 작성으로 서버 다운타임을 없애 지속적인 서비스 제공 가능
+- Kubernetes Job을 사용해 안정적인 스케줄링
 
 ### 프로젝트 Repository
 
